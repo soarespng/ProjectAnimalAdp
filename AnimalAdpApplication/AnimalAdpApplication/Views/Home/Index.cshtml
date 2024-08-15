@@ -1,0 +1,21 @@
+﻿@model IEnumerable<AnimalAdpApplication.Entities.Animal>
+
+<h1>Lista de Animais</h1>
+
+<div class="row">
+    <div class="d-flex align-content-between">
+        @foreach (var animal in Model)
+        {
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMc-TzuYs2COq7gt3MnQHKnfkOmhRncEkusBvm1Jjpbc6wYvBJlhwjxasIifgN2Pfc070&usqp=CAU" />
+                <div class="d-flex">
+                    @animal.especie
+                    @animal.raca
+                    @animal.idade
+                    @animal.porte
+                    @animal.sexo
+                </div>
+            </div>
+        }
+    </div>
+</div>
