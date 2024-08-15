@@ -1,10 +1,18 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "pagina adocoes";
+}
+@section headclass {
+    <link href="~/css/styles.css" rel="stylesheet" />
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Adoções Pet</h1>
 </div>
+
+<div class="text-center">
+    <h1>Nosso projeto tem a intenção de dar um lar a animais em situação de rua, conectando você ao seu novo melhor amigo!</h1>
+</div>
+
+<p id="description">Por favor, preencha o formulário abaixo para adotar seu novo melhor amigo!</p>
